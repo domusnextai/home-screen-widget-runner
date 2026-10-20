@@ -52,7 +52,7 @@ const options = {
   target: ts.ScriptTarget.ES2020, module: ts.ModuleKind.ESNext,
   moduleResolution: ts.ModuleResolutionKind.Bundler, jsx: ts.JsxEmit.ReactJSX,
   lib: ['lib.es2020.d.ts', 'lib.dom.d.ts', 'lib.dom.iterable.d.ts'],
-  types: ['react', 'react-dom'], typeRoots: [path.join(runner, 'node_modules/@types')],
+  types: ['react', 'react-dom'], typeRoots: [...new Set(['react', 'react-dom'].map(name => path.dirname(path.dirname(require.resolve(`@types/${name}/package.json`)))))],
 };
 const host = ts.createCompilerHost(options);
 host.resolveModuleNames = (names, containingFile) => names.map(name => {

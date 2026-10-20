@@ -7,7 +7,7 @@ import path from 'node:path';
 const root = new URL('../', import.meta.url);
 const run = (...args) => execFileSync(process.execPath, ['scripts/widget-cli.mjs', ...args], {cwd: root, encoding: 'utf8', stdio: 'pipe'});
 test('CLI exposes its version and bundled preview resources', async () => {
-  assert.equal(run('--version').trim(), '1.0.0');
+  assert.equal(run('--version').trim(), '1.0.1');
   assert.equal(JSON.parse(await fs.readFile(path.join(run('--host-dir').trim(), 'versions.json'), 'utf8')).react, '18.3.1');
   await fs.access(run('--preview-script').trim());
 });
