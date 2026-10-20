@@ -4,18 +4,16 @@ A fork of [claudio-silva/claude-artifact-runner](https://github.com/claudio-silv
 
 ## Install
 
-The npm release is pending publisher 2FA. Until it is published, install from this public Git repository at a pinned commit. The npm commands below are for the registry release.
-
 Requires Node.js 22.14+ and npm. Run directly with npx:
 
 ```sh
-npx --yes @nori/widget-runner@1.0.1 Widget.tsx --out widget.js
+npx --yes @heynori/widget-runner@1.0.1 Widget.tsx --out widget.js
 ```
 
 For repeated builds, install once into a persistent tools directory:
 
 ```sh
-npm install --omit=dev --prefix ./widget-tools @nori/widget-runner@1.0.1
+npm install --omit=dev --prefix ./widget-tools @heynori/widget-runner@1.0.1
 ./widget-tools/node_modules/.bin/home-screen-widget --version
 ./widget-tools/node_modules/.bin/home-screen-widget Widget.tsx --out widget.js
 ```
