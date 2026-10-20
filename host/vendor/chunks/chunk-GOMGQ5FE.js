@@ -1,0 +1,1 @@
+import{a}from"./chunk-3AGIJ2SA.js";import{d as u}from"./chunk-FRNGIS5F.js";var e=u(a(),1);function f(t){let c=e.useRef(t);return e.useEffect(()=>{c.current=t}),e.useMemo(()=>(...r)=>c.current?.(...r),[])}export{f as a};

@@ -1,0 +1,1 @@
+import{a as n}from"./chunk-7AK7OPDU.js";import{a as i}from"./chunk-3AGIJ2SA.js";import{d as t}from"./chunk-FRNGIS5F.js";var r=t(i(),1),c=t(n(),1),a=r.createContext(void 0);function v(e){let o=r.useContext(a);return e||o||"ltr"}export{v as a};
