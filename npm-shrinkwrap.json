@@ -1,11 +1,11 @@
 {
-  "name": "@domusnextai/home-screen-widget-runner",
+  "name": "@nori/widget-runner",
   "version": "1.0.1",
   "lockfileVersion": 3,
   "requires": true,
   "packages": {
     "": {
-      "name": "@domusnextai/home-screen-widget-runner",
+      "name": "@nori/widget-runner",
       "version": "1.0.1",
       "license": "MIT",
       "dependencies": {

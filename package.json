@@ -1,5 +1,5 @@
 {
-  "name": "@domusnextai/home-screen-widget-runner",
+  "name": "@nori/widget-runner",
   "private": false,
   "version": "1.0.1",
   "type": "module",
@@ -128,5 +128,9 @@
     "README.md",
     "README.external.md",
     "npm-shrinkwrap.json"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }

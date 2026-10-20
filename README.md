@@ -2,17 +2,25 @@
 
 A fork of [claudio-silva/claude-artifact-runner](https://github.com/claudio-silva/claude-artifact-runner), adapted for host-managed dependencies and a single-file React widget workflow. Original MIT license and attribution are retained.
 
-## Install from Git
+## Install
 
-Requires Node.js 22.14+ and npm. Pin a release commit instead of a mutable branch:
+The npm release is pending publisher 2FA. Until it is published, install from this public Git repository at a pinned commit. The npm commands below are for the registry release.
+
+Requires Node.js 22.14+ and npm. Run directly with npx:
 
 ```sh
-npm install --prefix ./widget-tools 'git+https://github.com/domusnextai/home-screen-widget-runner.git#<commit>'
+npx --yes @nori/widget-runner@1.0.1 Widget.tsx --out widget.js
+```
+
+For repeated builds, install once into a persistent tools directory:
+
+```sh
+npm install --omit=dev --prefix ./widget-tools @nori/widget-runner@1.0.1
 ./widget-tools/node_modules/.bin/home-screen-widget --version
 ./widget-tools/node_modules/.bin/home-screen-widget Widget.tsx --out widget.js
 ```
 
-The package is installed from Git; it is not currently published to the npm registry. npm-shrinkwrap.json locks the dependency graph. Compiler dependencies are runtime dependencies, so the CLI also works with production-only installation.
+The public Git fork remains an alternative package source; pin a release commit when using it. npm-shrinkwrap.json locks the dependency graph. Compiler dependencies are runtime dependencies, so production-only installation works.
 
 ## CLI capabilities
 
