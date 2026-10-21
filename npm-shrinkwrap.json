@@ -85,7 +85,7 @@
         "vite-plugin-singlefile": "2.3.0"
       },
       "engines": {
-        "node": ">=22.14.0"
+        "node": ">20"
       }
     },
     "node_modules/@alloc/quick-lru": {
